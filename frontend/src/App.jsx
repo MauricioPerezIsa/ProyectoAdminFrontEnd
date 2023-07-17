@@ -1,4 +1,6 @@
-import { BrowserRouter,  Routes } from "react-router-dom";
+import { BrowserRouter,  Route,  Routes } from "react-router-dom";
+import LoginScreen from "./screen/LoginScreen"
+import Menu from "./screen/Menu";
 
 function App() {
 
@@ -6,8 +8,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<HomeScreen />} />
-          <Route path="/login" element={<LoginScreen />} /> */}
+          <Route path="/" element={<LoginScreen />} /> 
+          <Route path="/Menu/*" element={<Menu />} /> 
+
         </Routes>
       </BrowserRouter>
     </>
